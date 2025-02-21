@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Page</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Materialize CSS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="css/pradip_new_program.css"> <!-- Custom CSS -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery CDN -->
+
+    <style>
+        h1 {
+            color: pink;
+            text-align: center;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 50%;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+            width: 90%;
+        }
+
+        #submitButton {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+        }
+
+        #resetButton {
+            margin: 10px;
+            padding: 5px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
+
 <body>
     <h1>Hello, my World!</h1>
     <form id="testform">
@@ -14,7 +60,8 @@
         <input type="submit" id="submitButton" value="Submit">
     </form>
     <button id="resetButton">Reset</button>
-        <script type='text/javascript' src='js/pradip_new_program.js'></script>
 
+    <script type='text/javascript' src='js/pradip_new_program.js'></script>
 </body>
+
 </html>
