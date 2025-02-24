@@ -11,7 +11,6 @@ resetButton.addEventListener("click", function () {
 $("#resetButton").text("Reset Button 2"); // jQuery command
 
 document.getElementById("submitButton").addEventListener("click", function () {
-  alert("Button clicked!");
-  let $x = 20;
-  alert(Today());
+  alert("Button clicked!"+ new Date()) ;
+  
 });
