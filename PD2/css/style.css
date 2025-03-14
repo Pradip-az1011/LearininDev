@@ -1,0 +1,232 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    background-color: #f4f7fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: transparent;
+    padding: 20px 50px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #5C6BC0;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+    color: #3f51b5;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar .nav-item {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar .nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    background-color: #5C6BC0;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Hero Section */
+header {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+header .cta-btn {
+    padding: 14px 35px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #5C6BC0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header .cta-btn:hover {
+    background-color: #3f51b5;
+    transform: translateY(-3px);
+}
+
+/* About Section */
+.section {
+    padding: 80px 0;
+}
+
+#about {
+    background-color: #fff;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Services Section */
+#services {
+    background-color: #f9f9f9;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #fff;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills-list li {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #5C6BC0;
+}
+
+form .cta-btn {
+    padding: 12px 30px;
+    border: none;
+    background-color: #5C6BC0;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form .cta-btn:hover {
+    background-color: #3f51b5;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .copy {
+    font-size: 1rem;
+    color: #bbb;
+}
